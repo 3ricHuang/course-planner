@@ -3,6 +3,7 @@ import ClassSchedule from '@/components/ClassSchedule';
 import NavBar from '@/components/NavBar';
 import Chatroom from '@/components/ChatRoom';
 import SearchCol from '@/components/SearchCol';
+import CourseList from '@/components/CourseList';
 
 export default function Home() {
 	return (
@@ -10,10 +11,11 @@ export default function Home() {
 			<header className="w-full">
 				<NavBar />
 			</header>
-			<main className="row-start-2 flex h-full flex-col items-center gap-[32px] sm:items-start">
+			<main className="row-start-2 flex h-full w-full flex-col items-center gap-[32px] sm:items-start">
 				{/* <ClassSchedule /> */}
 				{/* <SearchCol /> */}
-				<Chatroom />
+				<CourseList />
+				{/* <Chatroom /> */}
 			</main>
 		</div>
 	);
